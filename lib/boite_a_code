@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+LE JOUEUR CHOISI LE SYMBOLE
+while symb1 != "X" || symb1 != "O"
+  puts "le player 1 choisit son symbole X ou O"
+  symb1 = gets.chomp
+end
+
+puts "le player 1 choisit son nom"
+nom1 = gets.chomp
+symb1 = ""
+while symb1 != "X" || symb1 != "O"
+  puts "le player 1 choisit son symbole X ou O"
+  symb1 = gets.chomp
+end
+puts "le player 2 choisit son nom"
+nom2 = gets.chomp
+if symb1 == "O"
+  then symb2 = "X"
+       puts "le player 2 a le symbole X"
+   else symb2 = "O"
+       puts "le player 2 a le symbole O"
+end
+player_1 = Player.new(nom1, symb1)
+player_2 = Player.new(nom2, symb2)

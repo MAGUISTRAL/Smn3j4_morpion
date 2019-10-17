@@ -1,8 +1,11 @@
-#require 'rubygems'
-#-------Pour le scrapping-------
-#require 'nokogiri'
-#-------Pour simuler un navigateur-------
-#require 'watir'
-#require 'launchy'
-#-------Pour les tests------
-#require 'pry'
+class Player
+  attr_accessor :name, :symbole
+
+  def initialize(name, symbole)
+    @name = name
+    @symbole = symbole
+  end
+
+
+
+end
