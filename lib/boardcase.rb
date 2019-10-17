@@ -1,0 +1,3 @@
+class Boardcase
+
+end
