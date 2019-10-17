@@ -5,6 +5,47 @@
 
 
 
+
+
+
+
+
+
+TEST SI GAGNE
+
+if a[1]="x" && b[2]="x" && c[3]="x"
+ puts "bienjoué tu as gagné"
+ is_win = 1
+end
+
+
+
+
+class Board
+
+  espace_gauche = " "*15
+
+  ligne0 = Array[espace_gauche, "", "1", "2", "3"]
+  ligne1 = Array[espace_gauche, "A", "#{@A1}", "#{@A2}", "#{@A3}"]
+  ligne2 = Array[espace_gauche, "B", "#{@B1}", "#{@B2}", "#{@B3}"]
+  ligne3 = Array[espace_gauche, "C", "#{@C1}", "#{@C2}", "#{@C3}"]
+
+print ligne0
+puts ""
+print ligne1
+puts ""
+print ligne2
+puts ""
+print ligne3
+puts ""
+puts "board"
+
+end
+
+
+
+
+
 LE JOUEUR CHOISI LE SYMBOLE
 while symb1 != "X" || symb1 != "O"
   puts "le player 1 choisit son symbole X ou O"

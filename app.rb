@@ -13,7 +13,7 @@ puts "#################################################################"
 puts "#                                                               #"
 puts "#                                                               #"
 puts "#                                                               #"
-puts "# Author        : Maguistral corporation united state of brittany#"
+puts "# Author        : Maguistral corp. united state of brittany     #"
 puts "# Date          : 17 October 2019                               #"
 puts "# Note          : code during training The Hacking Project 2019 #"
 puts "# Program's name:  Morpion                                      #"
@@ -26,12 +26,13 @@ puts "#################################################################"
 puts ""
 puts "fin :"   # Force STDIN for get STanDard INput
 print "> "
+puts "Player 1 : entrez votre nom"
+player1 = STDIN.gets.chomp
+player1 = Player.new(player1, "X")
 
-     puts "Player 1 : entrez votre nom"
-     nom1 = gets.chomp
+puts "Player 2 : entrez votre nom"
+player2 = STDIN.gets.chomp
+player2 = Player.new(player2, "O")
 
-     puts "Player 2 : entrez votre nom"
-     nom2 = gets.chomp
-
-     player_1 = Player.new(nom1, "X")
-     player_2 = Player.new(nom2, "O")
+puts "Début du jeu :"
+board1 = Board.new
